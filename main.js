@@ -36,7 +36,6 @@ function result() {
         //newStory = newStory.replace("300 pounds" , Stone);
         //newStory = newStory.replace("94 fahrenheit" , Celsius);
 
-        //修正 @fq79074さんより
         newStory = newStory
         .replace(/(\d+)\s*pounds/ig, (a, b) => `${Math.round(b * 0.071429)} stone`)
         .replace(/(\d+)\s*fahrenheit/ig, (a, b) => `${Math.round((b - 32) / 1.8)} centigrade`);
